@@ -7,14 +7,16 @@
       <h2>{{c}}</h2>
     </td>
     <td>
-      <h2>
-        <span>
-          <img src="../src/assets/img/corbeille.png" />
-        </span>
-      </h2>
+      <span>
+        <img src="../assets/img/modifier.png" />
+      </span>
     </td>
     <td>
-      <h2>{{c}}</h2>
+      <h2>
+        <span>
+          <img src="../assets/img/corbeille.png" />
+        </span>
+      </h2>
     </td>
   </tr>
 </template>
@@ -27,14 +29,17 @@ export default {
 </script>
 
 <style scoped>
-table,
 tr,
 td {
   border: 1px solid black;
   border-collapse: collapse;
 }
 
-tr:hover {
+span {
+  cursor: pointer;
+}
+
+tbody tr:hover {
   background-color: rgba(255, 68, 0, 0.726);
   padding: 5px;
 }

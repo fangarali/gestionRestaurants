@@ -9,8 +9,8 @@ export default {};
 </script>
 
 <style scoped>
-h2 {
-  margin-right: 3em;
+a {
+  margin-right: 4em;
 }
 #sticky-footer {
   position: fixed;
@@ -18,7 +18,8 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   left: 0;
   font-size: 0.4 em;
-  color: salmon;
+  font-weight: bold;
+  color: whitesmoke;
   width: 100%;
   padding: 1px;
   background-color: gray;
