@@ -1,31 +1,32 @@
 <template>
-  <div id="restaurant">
-    <td>{{nom}}</td>
-    <td>{{cuisine}}</td>
+  <tr>
     <td>
-      <span>
-        <img src="../assets/src/img/corbeille.png" />
-      </span>
+      <h2>{{n}}</h2>
     </td>
-  </div>
+    <td>
+      <h2>{{c}}</h2>
+    </td>
+    <td>
+      <h2>
+        <span>
+          <img src="../src/assets/img/corbeille.png" />
+        </span>
+      </h2>
+    </td>
+    <td>
+      <h2>{{c}}</h2>
+    </td>
+  </tr>
 </template>
 
 <script>
 export default {
   name: "restaurant",
-  props: [nom, cuisine]
+  props: ["n", "c"]
 };
 </script>
 
 <style scoped>
-#restaurant {
-  margin-top: 150px;
-}
-
-td {
-  padding: 5px;
-}
-
 table,
 tr,
 td {
@@ -34,7 +35,11 @@ td {
 }
 
 tr:hover {
-  background-color: lightGrey;
+  background-color: rgba(255, 68, 0, 0.726);
+  padding: 5px;
+}
+
+td {
   padding: 5px;
 }
 </style>

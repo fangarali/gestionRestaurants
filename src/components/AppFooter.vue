@@ -1,6 +1,6 @@
 <template>
   <div id="sticky-footer">
-    <h2>Réaliser par : FANGAR ALI</h2>
+    <a>Réaliser par : FANGAR ALI | (2019-2020)</a>
   </div>
 </template>
 
@@ -17,7 +17,7 @@ h2 {
   bottom: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   left: 0;
-  font-size: 0.7em;
+  font-size: 0.4 em;
   color: salmon;
   width: 100%;
   padding: 1px;

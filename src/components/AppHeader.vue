@@ -83,7 +83,7 @@ export default {
   width: 50%;
   margin-top: 1rem;
   font-size: 100%;
-  margin-left: 9rem;
+  margin-left: 6rem;
   /*border: 1px solid black;*/
 }
 

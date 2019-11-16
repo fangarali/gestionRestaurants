@@ -1,23 +1,20 @@
 <template>
-  <div>
+  <div id="layout">
     <AppHeader />
-    <table>
-      <tr>
-        <Restaurant nom="pepe" cuisine="popo" />
-        <Restaurant nom="pepe" cuisine="popo" />
-      </tr>
-    </table>
+    <ListeRestaurants />
     <AppFooter />
   </div>
 </template>
 
 <script>
 import AppHeader from "./AppHeader";
-import Restaurant from "./Restaurant";
+import ListeRestaurants from "./ListeRestaurants";
 import AppFooter from "./AppFooter";
 export default {
-  components: { AppHeader, Restaurant, AppFooter }
+  name: "layout",
+  components: { AppHeader, ListeRestaurants, AppFooter }
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>
