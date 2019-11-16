@@ -1,16 +1,23 @@
 <template>
-  <h3>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h3>
+  <h2>{{msg}}</h2>
 </template>
 
 <script>
-export default { 
-    name:"titre",
+export default {
+  name: "titre",
+  props: {
+    msg: String
+  }
 };
 </script>
 
 <style scoped>
 @font-face {
   font-family: "Cookie";
-  src: url("assets/fonts/Helvetica.ttf") format("ttf");
+  src: url("../assets/fonts/Cookie.ttf");
+}
+h2 {
+  font-family: "Cookie";
+  color: white;
 }
 </style>
