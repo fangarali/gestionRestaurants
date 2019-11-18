@@ -1,19 +1,14 @@
 <template>
   <tr>
     <td>
-      <h2>{{n}}</h2>
+      <h2 v-show="n">{{ n }}</h2>
     </td>
     <td>
-      <h2>{{c}}</h2>
-    </td>
-    <td>
-      <span>
-        <img src="../assets/img/modifier.png" />
-      </span>
+      <h2 v-show="c">{{ c }}</h2>
     </td>
     <td>
       <h2>
-        <span>
+        <span @click="supResto">
           <img src="../assets/img/corbeille.png" />
         </span>
       </h2>
@@ -23,8 +18,18 @@
 
 <script>
 export default {
-  name: "restaurant",
-  props: ["n", "c"]
+  props: ["n", "c", "id"], //nom, cuisine, id
+  methods: {
+    modifResto() {
+      alert("hello");
+    },
+    supResto() {
+      this.$emit("supprimer", this.id);
+    }
+  },
+  data() {
+    return {};
+  }
 };
 </script>
 
@@ -32,6 +37,7 @@ export default {
 tr,
 td {
   border: 1px solid black;
+  font-size: 10px;
   border-collapse: collapse;
 }
 
@@ -39,7 +45,7 @@ span {
   cursor: pointer;
 }
 
-tbody tr:hover {
+tr:hover {
   background-color: rgba(255, 68, 0, 0.726);
   padding: 5px;
 }

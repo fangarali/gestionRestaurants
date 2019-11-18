@@ -10,7 +10,8 @@ export default {};
 
 <style scoped>
 a {
-  margin-right: 4em;
+  margin-right: auto;
+  margin-left: auto;
 }
 #sticky-footer {
   position: fixed;

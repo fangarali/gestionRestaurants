@@ -1,7 +1,7 @@
 <template>
   <div id="sticky-header">
     <div id="box-left">
-      <Logo msg="Citation ?" @click.native="randomQuote" />
+      <Logo msg="Une autre citation ?" @click.native="randomQuote" />
       <span class="fleche">
         <img src="../assets/img/fleche.png" />
       </span>
@@ -10,7 +10,7 @@
       <Titre :msg="citation" />
     </div>
     <div id="box-right">
-      <Logo @click.native="randomMusic" msg="Music? (YouTube)" />
+      <Logo @click.native="randomMusic" msg="Un peu de music? (YouTube)" />
     </div>
   </div>
 </template>
@@ -32,7 +32,14 @@ export default {
         '"L’on est plus sociable et d’un meilleur commerce par le cœur que par l’esprit."',
         '"La vie est un restaurant petit, mauvais et cher. En plus, c\'est trop court."'
       ],
-      musicYoutube: ["0iOKsCDxy-Y", "sp4-U53qeMc", "J1H2_VTGtk0", "mGsFF5jtNE8"]
+      musicYoutube: [
+        "0iOKsCDxy-Y",
+        "sp4-U53qeMc",
+        "J1H2_VTGtk0",
+        "mGsFF5jtNE8",
+        "djMxEuT_vgY",
+        "r-FnM4578g8"
+      ]
     };
   },
   methods: {
@@ -49,7 +56,7 @@ export default {
     }
   },
   mounted() {
-    this.randomQuote();
+    this.citation = this.citations[0];
   },
   components: {
     Logo,
@@ -67,7 +74,6 @@ export default {
 }
 
 #box-left .fleche {
-  /* Position the tooltip */
   visibility: hidden;
   position: absolute;
   z-index: -1;
